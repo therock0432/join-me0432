@@ -1,0 +1,29 @@
+.sidebarChannel {
+  display: flex;
+}
+
+.sidebarChannel > h4 {
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+  /* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+  /* background-color: #f9a3cb; */
+  color: rgb(254, 254, 254);
+  animation: blinker 1s linear infinite;
+  cursor: pointer;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.sidebarChannel:hover > h4 {
+  color: white;
+}
+
+.sidebarChannel__hash {
+  font-size: 30px;
+  padding: 10px;
+}
